@@ -1,0 +1,8 @@
+# Built artifacts
+*.sgsnap
+target/
+__pycache__/
+.venv/
+
+# Large derived data — keep the source extract, not what is built from it
+data/derived/
