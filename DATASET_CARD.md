@@ -1,5 +1,5 @@
 ---
-license: odbl-1.0
+license: odbl
 pretty_name: wildfire-evac-kg
 tags:
   - knowledge-graph

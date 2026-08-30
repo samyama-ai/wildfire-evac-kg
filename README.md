@@ -12,6 +12,24 @@ data/paradise_ca.json     raw Overpass response, 1.6 MB
                           12,610 nodes + 1,177 ways = 13,787 elements
 ```
 
+## Published dataset
+
+A graph form of this extract is published at
+**[huggingface.co/datasets/VaidhyaMegha/wildfire-evac-kg](https://huggingface.co/datasets/VaidhyaMegha/wildfire-evac-kg)**
+— 13,787 nodes and 26,831 edges as node/edge CSVs, with `paradise_ca.json` shipped alongside
+unmodified.
+
+```python
+from datasets import load_dataset
+junctions = load_dataset("VaidhyaMegha/wildfire-evac-kg", "junction")
+```
+
+> The graph form is **derived for that publication**, not by this repository — see below.
+> OSM nodes become junctions, ways become roads, consecutive node references along a way
+> become connections. The raw extract travels with it so the derivation can be checked.
+> **ODbL share-alike applies**: the published dataset is ODbL, and so must any database
+> derived from it be.
+
 ## Status: extract only
 
 This repository holds the **source extract**, not a built graph. There is no
