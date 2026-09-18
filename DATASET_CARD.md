@@ -1,5 +1,5 @@
 ---
-license: odbl
+license: odbl-1.0
 pretty_name: wildfire-evac-kg
 tags:
   - knowledge-graph
@@ -21,30 +21,11 @@ language:
 
 ## Provenance and licence
 
-| | |
-|---|---|
-| **Source** | [OpenStreetMap](https://www.openstreetmap.org) via the Overpass API (`Overpass API 0.7.62.11`) |
-| **Licence** | **ODbL 1.0** — [Open Database License](https://opendatacommons.org/licenses/odbl/1-0/) |
-| **Attribution** | © OpenStreetMap contributors |
-| **Extracted** | 2026-05-11T16:29:15Z (`osm3s.timestamp_osm_base`) |
-| **Area** | Paradise, Butte County, California, USA |
+Apache 2.0 covers the extract scripts. The data is **OpenStreetMap**, under **ODbL 1.0**:
+a derived database must be shared under the same licence, and OSM must be credited. That
+is why this card's licence is `odbl-1.0` and not `apache-2.0` — the graph is a derived
+database, not a program.
 
-The licence is not inferred. The extract carries it in its own metadata:
-
-```json
-"osm3s": {
-  "timestamp_osm_base": "2026-05-11T16:29:15Z",
-  "copyright": "The data included in this document is from www.openstreetmap.org.
-                The data is made available under ODbL."
-}
-```
-
-### What ODbL requires of you
-
-ODbL is share-alike. If you distribute this data or a derived database, you must
-attribute OpenStreetMap and offer the derived database under ODbL. Producing
-*results* from it — a map, an analysis, an evacuation model — does not require you
-to license those results under ODbL, but does require attribution.
 
 ## Contents
 
